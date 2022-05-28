@@ -16,26 +16,26 @@ body {
 .flex-container {
     display: flex;
     background: white;
+    flex-wrap: wrap;
 }
 
 .box {
     height: 100px;
-    width: 320px;
+    min-width: 200px;
+    flex-grow: 1;
 }
 
 .one {
     background: red;
-    flex-shrink: 1;
 }
 
 .two {
     background: blue;
-    flex-shrink: 2;
 }
 
 .three {
     background: green;
-    flex-shrink: 7;
 }
 
-/* see shrink in action by making browser window smaller */
+/* to see wrap in action, squish browser window
+the last item will move below the others to a new row */
