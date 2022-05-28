@@ -21,21 +21,23 @@ body {
 
 .box {
     height: 100px;
-    min-width: 200px;
     flex-grow: 1;
 }
 
 .one {
     background: red;
+    flex-basis: 100px;
 }
 
 .two {
     background: blue;
+    flex-basis: 200px;
 }
 
 .three {
     background: green;
+    flex-basis: 300px;
 }
 
-/* to see wrap in action, squish browser window
-the last item will move below the others to a new row */
+/* flex basis shrinks the items when browser window cuts them off
+as opposed to width which will keep them full size and make scroll bar appear */
