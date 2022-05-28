@@ -21,23 +21,19 @@ body {
 
 .box {
     height: 100px;
-    flex-grow: 1;
+    /* flex grow, shrink, basis combined
+    is the preferred way*/
+    flex: 1 0 200px;
 }
 
 .one {
     background: red;
-    flex-basis: 100px;
 }
 
 .two {
     background: blue;
-    flex-basis: 200px;
 }
 
 .three {
     background: green;
-    flex-basis: 300px;
 }
-
-/* flex basis shrinks the items when browser window cuts them off
-as opposed to width which will keep them full size and make scroll bar appear */
